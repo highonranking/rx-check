@@ -1,0 +1,38 @@
+{
+  "name": "rxcheck-india",
+  "version": "0.2.0",
+  "description": "Open starter toolkit for checking drug-drug interactions and resolving Indian brand-name drugs to generic names. Ships with a small, clearly-labeled seed dataset meant to be expanded and clinically verified by the community, plus a reference HTTP server with API-key auth and rate limiting.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "lint": "node --check src/index.js"
+  },
+  "keywords": [
+    "healthcare",
+    "drug-interaction",
+    "medication-safety",
+    "india",
+    "generic-drug",
+    "pharmacy",
+    "ehr"
+  ],
+  "license": "MIT",
+  "author": "Abhinav",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "files": [
+    "src",
+    "data",
+    "middleware",
+    "scripts",
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  }
+}
