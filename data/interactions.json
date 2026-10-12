@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "description": "SEED/STARTER dataset of well-established, textbook-level drug-drug interactions, keyed by generic (INN) name pairs. This is a SMALL, deliberately conservative list of high-confidence, widely-documented interactions — it is NOT exhaustive, NOT a clinical decision support system, and MUST NOT be used as the sole basis for a clinical decision. Before any production/clinical use, this dataset should be reviewed by a qualified pharmacist/clinician and expanded against an authoritative source (e.g. a licensed drug interaction database such as DDInter, Micromedex, Lexicomp, or First Databank). Severity labels are approximate (major/moderate/minor) and mechanisms are simplified.",
+    "lastReviewed": "2026-10",
+    "severityScale": {
+      "major": "Potentially serious or life-threatening; avoid combination or requires close monitoring/dose adjustment",
+      "moderate": "Clinically significant; monitor or adjust therapy",
+      "minor": "Usually of limited clinical significance; be aware"
+    }
+  },
+  "pairs": [
+    { "a": "Warfarin", "b": "Aspirin", "severity": "major", "mechanism": "Additive effect on bleeding risk (anticoagulant + antiplatelet)", "recommendation": "Avoid combination unless specifically indicated; monitor INR and for bleeding" },
+    { "a": "Warfarin", "b": "Ibuprofen", "severity": "major", "mechanism": "NSAID increases bleeding risk and may potentiate anticoagulant effect", "recommendation": "Avoid NSAIDs in patients on warfarin where possible; prefer paracetamol for pain" },
+    { "a": "Warfarin", "b": "Clopidogrel", "severity": "major", "mechanism": "Combined anticoagulant + antiplatelet effect increases bleeding risk", "recommendation": "Use only under specialist supervision with monitoring" },
+    { "a": "Warfarin", "b": "Metronidazole", "severity": "major", "mechanism": "Metronidazole inhibits warfarin metabolism (CYP2C9), increasing INR/bleeding risk", "recommendation": "Monitor INR closely or avoid; consider alternative antibiotic" },
+    { "a": "Aspirin", "b": "Clopidogrel", "severity": "moderate", "mechanism": "Dual antiplatelet effect increases bleeding risk", "recommendation": "Often intentionally co-prescribed (e.g. post-stent) but requires monitoring for bleeding" },
+    { "a": "Aspirin", "b": "Ibuprofen", "severity": "moderate", "mechanism": "Ibuprofen may blunt aspirin's antiplatelet/cardioprotective effect; additive GI bleeding risk", "recommendation": "If both needed, space dosing and consider GI protection" },
+    { "a": "Losartan", "b": "Ibuprofen", "severity": "moderate", "mechanism": "NSAIDs can reduce antihypertensive effect and impair renal function when combined with ARBs", "recommendation": "Monitor renal function and blood pressure; avoid prolonged NSAID use" },
+    { "a": "Telmisartan", "b": "Ibuprofen", "severity": "moderate", "mechanism": "Same class effect as Losartan + NSAID", "recommendation": "Monitor renal function and blood pressure" },
+    { "a": "Atorvastatin", "b": "Clarithromycin", "severity": "major", "mechanism": "CYP3A4 inhibition by clarithromycin raises statin levels, increasing myopathy/rhabdomyolysis risk", "recommendation": "Consider temporary statin suspension during macrolide course, or use azithromycin instead" },
+    { "a": "Atorvastatin", "b": "Azithromycin", "severity": "moderate", "mechanism": "Weaker CYP3A4 interaction than clarithromycin, but still monitored", "recommendation": "Generally considered safer macrolide choice; still watch for muscle symptoms" },
+    { "a": "Digoxin", "b": "Furosemide", "severity": "moderate", "mechanism": "Furosemide-induced hypokalemia increases risk of digoxin toxicity", "recommendation": "Monitor potassium and digoxin levels" },
+    { "a": "Digoxin", "b": "Clarithromycin", "severity": "major", "mechanism": "Macrolide inhibits digoxin clearance (P-glycoprotein), raising digoxin levels", "recommendation": "Monitor digoxin levels; consider alternative antibiotic" },
+    { "a": "Ciprofloxacin", "b": "Theophylline", "severity": "major", "mechanism": "Ciprofloxacin inhibits theophylline metabolism, risking toxicity (seizures, arrhythmia)", "recommendation": "Avoid combination or reduce theophylline dose with monitoring" },
+    { "a": "Metformin", "b": "Alcohol", "severity": "moderate", "mechanism": "Alcohol increases risk of lactic acidosis with metformin", "recommendation": "Advise patients to avoid excess alcohol intake" },
+    { "a": "Methotrexate", "b": "Ibuprofen", "severity": "major", "mechanism": "NSAIDs reduce renal clearance of methotrexate, increasing toxicity risk", "recommendation": "Avoid NSAIDs with methotrexate, especially at high (oncologic) doses; caution even at low weekly RA doses" },
+    { "a": "Clopidogrel", "b": "Omeprazole", "severity": "moderate", "mechanism": "Omeprazole inhibits CYP2C19, reducing activation of clopidogrel to its active metabolite", "recommendation": "Prefer pantoprazole or an H2-blocker if PPI co-therapy is needed" },
+    { "a": "Clopidogrel", "b": "Pantoprazole", "severity": "minor", "mechanism": "Weaker CYP2C19 interaction than omeprazole", "recommendation": "Generally preferred PPI choice alongside clopidogrel, but awareness still warranted" },
+    { "a": "Levothyroxine", "b": "Calcium carbonate", "severity": "moderate", "mechanism": "Calcium binds levothyroxine in the gut, reducing absorption", "recommendation": "Separate dosing by at least 4 hours" },
+    { "a": "Spironolactone", "b": "Losartan", "severity": "major", "mechanism": "Combined potassium-sparing effect increases hyperkalemia risk", "recommendation": "Monitor serum potassium and renal function closely" },
+    { "a": "Spironolactone", "b": "Telmisartan", "severity": "major", "mechanism": "Same hyperkalemia mechanism as with other ARBs", "recommendation": "Monitor serum potassium and renal function closely" },
+    { "a": "Tramadol", "b": "Sertraline", "severity": "major", "mechanism": "Both increase serotonergic activity, raising risk of serotonin syndrome", "recommendation": "Use with caution; educate on serotonin syndrome symptoms" },
+    { "a": "Alprazolam", "b": "Tramadol", "severity": "major", "mechanism": "Additive CNS and respiratory depression", "recommendation": "Avoid combination where possible; if necessary, use lowest doses with close monitoring" },
+    { "a": "Clonazepam", "b": "Alprazolam", "severity": "moderate", "mechanism": "Additive CNS depression from two benzodiazepines", "recommendation": "Avoid combining two benzodiazepines; review need for both" },
+    { "a": "Sildenafil", "b": "Nitroglycerin", "severity": "major", "mechanism": "Both cause vasodilation via nitric oxide pathway; combination can cause severe, life-threatening hypotension", "recommendation": "Contraindicated combination; do not co-administer" },
+    { "a": "Doxycycline", "b": "Calcium carbonate", "severity": "moderate", "mechanism": "Calcium chelates tetracyclines in the gut, reducing absorption", "recommendation": "Separate dosing by at least 2-3 hours" },
+    { "a": "Amoxicillin", "b": "Warfarin", "severity": "moderate", "mechanism": "Antibiotics can alter gut flora producing vitamin K, potentiating warfarin effect", "recommendation": "Monitor INR during and after antibiotic course" }
+  ]
+}

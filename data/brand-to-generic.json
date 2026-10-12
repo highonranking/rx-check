@@ -1,0 +1,733 @@
+{
+  "_meta": {
+    "description": "SEED/STARTER dataset. Maps common Indian pharmaceutical brand names to their generic (INN) ingredient(s). This is a small, manually curated list of widely known brands intended to bootstrap the project \u2014 it is NOT exhaustive and NOT a substitute for an authoritative source (e.g. CDSCO drug database, a licensed drug compendium, or a pharmacist). Brand availability, formulations, and strengths change over time and vary by manufacturer. Verify before any clinical or production use. Contributions to expand/correct this file are welcome. Batch 2 (2026-10): ~48 additional common Indian brands added, same curation standard and same caveats \u2014 not exhaustive, needs clinical verification.",
+    "lastReviewed": "2026-10 (batch 2 added)",
+    "schema": {
+      "brand": "Brand name as commonly seen on packaging/prescriptions (case-insensitive lookup)",
+      "genericNames": "Array of generic/INN ingredient names. More than one entry means a combination product.",
+      "combination": "true if the brand is a fixed-dose combination of 2+ actives",
+      "notes": "Optional free-text notes (common strengths, category)"
+    }
+  },
+  "entries": [
+    {
+      "brand": "Crocin",
+      "genericNames": [
+        "Paracetamol"
+      ],
+      "combination": false,
+      "notes": "Also sold as Crocin Advance, various strengths"
+    },
+    {
+      "brand": "Dolo 650",
+      "genericNames": [
+        "Paracetamol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Calpol",
+      "genericNames": [
+        "Paracetamol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Combiflam",
+      "genericNames": [
+        "Ibuprofen",
+        "Paracetamol"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Brufen",
+      "genericNames": [
+        "Ibuprofen"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Ecosprin",
+      "genericNames": [
+        "Aspirin"
+      ],
+      "combination": false,
+      "notes": "Low-dose Aspirin, commonly 75mg"
+    },
+    {
+      "brand": "Ecosprin AV",
+      "genericNames": [
+        "Aspirin",
+        "Atorvastatin"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Disprin",
+      "genericNames": [
+        "Aspirin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Augmentin",
+      "genericNames": [
+        "Amoxicillin",
+        "Clavulanic acid"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Moxikind-CV",
+      "genericNames": [
+        "Amoxicillin",
+        "Clavulanic acid"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Azithral",
+      "genericNames": [
+        "Azithromycin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Zithromax",
+      "genericNames": [
+        "Azithromycin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Ciplox",
+      "genericNames": [
+        "Ciprofloxacin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Cifran",
+      "genericNames": [
+        "Ciprofloxacin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Norflox",
+      "genericNames": [
+        "Norfloxacin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Glycomet",
+      "genericNames": [
+        "Metformin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Glucophage",
+      "genericNames": [
+        "Metformin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Amaryl",
+      "genericNames": [
+        "Glimepiride"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Januvia",
+      "genericNames": [
+        "Sitagliptin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Lantus",
+      "genericNames": [
+        "Insulin glargine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Atorva",
+      "genericNames": [
+        "Atorvastatin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Lipitor",
+      "genericNames": [
+        "Atorvastatin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Rosuvas",
+      "genericNames": [
+        "Rosuvastatin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Telma",
+      "genericNames": [
+        "Telmisartan"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Amlopres",
+      "genericNames": [
+        "Amlodipine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Amlokind",
+      "genericNames": [
+        "Amlodipine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Losar",
+      "genericNames": [
+        "Losartan"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Concor",
+      "genericNames": [
+        "Bisoprolol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Met XL",
+      "genericNames": [
+        "Metoprolol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Pantocid",
+      "genericNames": [
+        "Pantoprazole"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Pan 40",
+      "genericNames": [
+        "Pantoprazole"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Omez",
+      "genericNames": [
+        "Omeprazole"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Rantac",
+      "genericNames": [
+        "Ranitidine"
+      ],
+      "combination": false,
+      "notes": "Largely withdrawn/replaced in many markets; kept for legacy prescription parsing"
+    },
+    {
+      "brand": "Zofer",
+      "genericNames": [
+        "Ondansetron"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Emeset",
+      "genericNames": [
+        "Ondansetron"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Allegra",
+      "genericNames": [
+        "Fexofenadine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Alerid",
+      "genericNames": [
+        "Cetirizine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Cetzine",
+      "genericNames": [
+        "Cetirizine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Avil",
+      "genericNames": [
+        "Pheniramine maleate"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Benadryl",
+      "genericNames": [
+        "Diphenhydramine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Clonotril",
+      "genericNames": [
+        "Clonazepam"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Restyl",
+      "genericNames": [
+        "Alprazolam"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Thyronorm",
+      "genericNames": [
+        "Levothyroxine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Eltroxin",
+      "genericNames": [
+        "Levothyroxine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Clopilet",
+      "genericNames": [
+        "Clopidogrel"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Deplatt",
+      "genericNames": [
+        "Clopidogrel"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Lanoxin",
+      "genericNames": [
+        "Digoxin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Wysolone",
+      "genericNames": [
+        "Prednisolone"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Voveran",
+      "genericNames": [
+        "Diclofenac"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Warf",
+      "genericNames": [
+        "Warfarin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Metacin",
+      "genericNames": [
+        "Paracetamol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Sumo",
+      "genericNames": [
+        "Nimesulide",
+        "Paracetamol"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Nise",
+      "genericNames": [
+        "Nimesulide"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Flexon",
+      "genericNames": [
+        "Ibuprofen",
+        "Paracetamol"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Zerodol",
+      "genericNames": [
+        "Aceclofenac"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Zerodol-P",
+      "genericNames": [
+        "Aceclofenac",
+        "Paracetamol"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Hifenac",
+      "genericNames": [
+        "Aceclofenac"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Meftal",
+      "genericNames": [
+        "Mefenamic acid"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Meftal Spas",
+      "genericNames": [
+        "Mefenamic acid",
+        "Dicyclomine"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Taxim-O",
+      "genericNames": [
+        "Cefixime"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Cefix",
+      "genericNames": [
+        "Cefixime"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Zifi",
+      "genericNames": [
+        "Cefixime"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Monocef",
+      "genericNames": [
+        "Ceftriaxone"
+      ],
+      "combination": false,
+      "notes": "Injectable, hospital use"
+    },
+    {
+      "brand": "Levoflox",
+      "genericNames": [
+        "Levofloxacin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Doxy-1",
+      "genericNames": [
+        "Doxycycline"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Enzoflam",
+      "genericNames": [
+        "Diclofenac",
+        "Paracetamol",
+        "Serratiopeptidase"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Combutol",
+      "genericNames": [
+        "Ethambutol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Akt-4",
+      "genericNames": [
+        "Rifampicin",
+        "Isoniazid",
+        "Pyrazinamide",
+        "Ethambutol"
+      ],
+      "combination": true,
+      "notes": "Standard anti-TB fixed-dose combination"
+    },
+    {
+      "brand": "Glimestar",
+      "genericNames": [
+        "Glimepiride"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Istamet",
+      "genericNames": [
+        "Sitagliptin",
+        "Metformin"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Janumet",
+      "genericNames": [
+        "Sitagliptin",
+        "Metformin"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Gluconorm",
+      "genericNames": [
+        "Repaglinide"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Dytor",
+      "genericNames": [
+        "Torsemide"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Lasix",
+      "genericNames": [
+        "Furosemide"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Aldactone",
+      "genericNames": [
+        "Spironolactone"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Envas",
+      "genericNames": [
+        "Enalapril"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Cardace",
+      "genericNames": [
+        "Ramipril"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Storvas",
+      "genericNames": [
+        "Atorvastatin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Nitrocontin",
+      "genericNames": [
+        "Nitroglycerin"
+      ],
+      "combination": false,
+      "notes": "Sustained-release oral nitrate"
+    },
+    {
+      "brand": "Sorbitrate",
+      "genericNames": [
+        "Isosorbide dinitrate"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Monotrate",
+      "genericNames": [
+        "Isosorbide mononitrate"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Clavam",
+      "genericNames": [
+        "Amoxicillin",
+        "Clavulanic acid"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Novamox",
+      "genericNames": [
+        "Amoxicillin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Mox",
+      "genericNames": [
+        "Amoxicillin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Taxim",
+      "genericNames": [
+        "Cefotaxime"
+      ],
+      "combination": false,
+      "notes": "Injectable"
+    },
+    {
+      "brand": "Metrogyl",
+      "genericNames": [
+        "Metronidazole"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Flagyl",
+      "genericNames": [
+        "Metronidazole"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Norflox-TZ",
+      "genericNames": [
+        "Norfloxacin",
+        "Tinidazole"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Zanocin",
+      "genericNames": [
+        "Ofloxacin"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Levocet",
+      "genericNames": [
+        "Levocetirizine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Xyzal",
+      "genericNames": [
+        "Levocetirizine"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Montek LC",
+      "genericNames": [
+        "Montelukast",
+        "Levocetirizine"
+      ],
+      "combination": true
+    },
+    {
+      "brand": "Asthalin",
+      "genericNames": [
+        "Salbutamol"
+      ],
+      "combination": false
+    },
+    {
+      "brand": "Seroflo",
+      "genericNames": [
+        "Salmeterol",
+        "Fluticasone propionate"
+      ],
+      "combination": true,
+      "notes": "Inhaler"
+    },
+    {
+      "brand": "Foracort",
+      "genericNames": [
+        "Formoterol",
+        "Budesonide"
+      ],
+      "combination": true,
+      "notes": "Inhaler"
+    },
+    {
+      "brand": "Duolin",
+      "genericNames": [
+        "Levosalbutamol",
+        "Ipratropium bromide"
+      ],
+      "combination": true,
+      "notes": "Nebulization"
+    },
+    {
+      "brand": "Budecort",
+      "genericNames": [
+        "Budesonide"
+      ],
+      "combination": false,
+      "notes": "Inhaler"
+    },
+    {
+      "brand": "Deriphyllin",
+      "genericNames": [
+        "Etophylline",
+        "Theophylline"
+      ],
+      "combination": true
+    }
+  ]
+}
