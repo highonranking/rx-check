@@ -1,0 +1,54 @@
+name: Add or correct a drug-drug interaction
+description: Propose a new interaction record, or flag a wrong severity/mechanism
+title: "[interaction] "
+labels: ["data", "interaction", "needs-clinical-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the highest-stakes file in the repo. Please include a real
+        source — a reference, package insert, or clinical guideline — not
+        just "I think this interacts." See CONTRIBUTING.md.
+  - type: input
+    id: drugA
+    attributes:
+      label: Drug A (generic name)
+      placeholder: e.g. Warfarin
+    validations:
+      required: true
+  - type: input
+    id: drugB
+    attributes:
+      label: Drug B (generic name)
+      placeholder: e.g. Ibuprofen
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - major
+        - moderate
+        - minor
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Mechanism — why do these interact?
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation — what would a clinician actually do?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Reference, guideline, package insert, or clinical reasoning
+    validations:
+      required: true

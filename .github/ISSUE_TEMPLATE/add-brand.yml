@@ -1,0 +1,49 @@
+name: Add or correct a brand → generic mapping
+description: Propose a new Indian brand name mapping, or flag a wrong one
+title: "[brand] "
+labels: ["data", "brand-mapping"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand coverage! Please see CONTRIBUTING.md for
+        the data-quality bar — a wrong entry is worse than a missing one.
+  - type: input
+    id: brand
+    attributes:
+      label: Brand name
+      description: Exactly as it appears on packaging/prescriptions
+      placeholder: e.g. Glycomet
+    validations:
+      required: true
+  - type: input
+    id: generics
+    attributes:
+      label: Generic/INN name(s)
+      description: Comma-separated if it's a combination product
+      placeholder: e.g. Metformin
+    validations:
+      required: true
+  - type: dropdown
+    id: combination
+    attributes:
+      label: Is this a combination product (2+ different active ingredients)?
+      options:
+        - "No — single active ingredient"
+        - "Yes — fixed-dose combination"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source / how do you know this?
+      description: Package insert, CDSCO listing, manufacturer site, personal clinical knowledge, etc.
+      placeholder: e.g. Package insert, or "common clinical knowledge — [reason]"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else? (strength, route, category, known naming conflicts)
+    validations:
+      required: false
